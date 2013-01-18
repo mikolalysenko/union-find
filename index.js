@@ -1,5 +1,7 @@
 "use strict"; "use restrict";
 
+module.exports = UnionFind;
+
 function UnionFind(count) {
   this.roots = new Array(count);
   this.ranks = new Array(count);
