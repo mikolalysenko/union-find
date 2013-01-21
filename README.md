@@ -24,7 +24,7 @@ Here is an example showing how to do connected component labelling.  Assume we a
     for(var i=0; i<VERTEX_COUNT; ++i) {
       labels[i] = forest.find(i);
     }
-    
+
 Installation
 ============
 

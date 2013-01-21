@@ -39,8 +39,9 @@ UnionFind.prototype.link = function(x, y) {
   if(xr === yr) {
     return;
   }
-  var xd = ranks[xr]
-    , yd = ranks[yr];
+  var ranks = this.ranks
+    , xd    = ranks[xr]
+    , yd    = ranks[yr];
   if(xd < yd) {
     roots[xr] = yr;
   } else if(yd < xd) {
