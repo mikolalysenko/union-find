@@ -1,6 +1,6 @@
 {
   "name": "union-find",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A union-find data structure for maintaining disjoint sets.",
   "main": "index.js",
   "repository": {
