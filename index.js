@@ -40,6 +40,7 @@ UnionFind.prototype.link = function(x, y) {
     return;
   }
   var ranks = this.ranks
+    , roots = this.roots
     , xd    = ranks[xr]
     , yd    = ranks[yr];
   if(xd < yd) {
