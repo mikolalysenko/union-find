@@ -27,7 +27,7 @@ UnionFind.prototype.find = function(x) {
   var roots = this.roots;
   while(roots[x] !== x) {
     var y = roots[x];
-    roots[x] = y;
+    roots[x] = roots[y];
     x = y;
   }
   return x;
