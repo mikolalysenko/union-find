@@ -12,18 +12,22 @@ function UnionFind(count) {
   }
 }
 
-UnionFind.prototype.length = function() {
-  return this.roots.length;
-}
+var proto = UnionFind.prototype
 
-UnionFind.prototype.makeSet = function() {
+Object.defineProperty(proto, "length", {
+  "get": function() {
+    return this.roots.length
+  }
+})
+
+proto.makeSet = function() {
   var n = this.roots.length;
   this.roots.push(n);
   this.ranks.push(0);
   return n;
 }
 
-UnionFind.prototype.find = function(x) {
+proto.find = function(x) {
   var roots = this.roots;
   while(roots[x] !== x) {
     var y = roots[x];
@@ -33,7 +37,7 @@ UnionFind.prototype.find = function(x) {
   return x;
 }
 
-UnionFind.prototype.link = function(x, y) {
+proto.link = function(x, y) {
   var xr = this.find(x)
     , yr = this.find(y);
   if(xr === yr) {
@@ -52,4 +56,3 @@ UnionFind.prototype.link = function(x, y) {
     ++ranks[xr];
   }
 }
-
