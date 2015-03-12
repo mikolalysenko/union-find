@@ -25,6 +25,6 @@
   "readmeFilename": "README.md",
   "gitHead": "8fbd75feecd9d7154f4c2ff21754f483ad07ccab",
   "devDependencies": {
-    "tape": "^2.12.3"
+    "tape": "^3.5.0"
   }
 }

@@ -28,11 +28,15 @@ proto.makeSet = function() {
 }
 
 proto.find = function(x) {
+  var x0 = x
   var roots = this.roots;
   while(roots[x] !== x) {
-    var y = roots[x];
-    roots[x] = roots[y];
-    x = y;
+    x = roots[x]
+  }
+  while(roots[x0] !== x) {
+    var y = roots[x0]
+    roots[x0] = x
+    x0 = y
   }
   return x;
 }
