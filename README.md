@@ -1,9 +1,7 @@
 union-find
 ==========
 
-A basic union-find data structure for node.js.  For more information, see wikipdia:
-
-[Disjoint Set Datastructures](http://en.wikipedia.org/wiki/Disjoint-set_data_structure)
+A basic union-find data structure for node.js. For more information, see Wikipedia: [Disjoint Set Datastructures](http://en.wikipedia.org/wiki/Disjoint-set_data_structure)
 
 Union find data structures solve the incremental connectivity problem. (That is maintaining a spanning forest under incremental insertions of edges.)  To handle fully dynamic connectivity, you can use a [dynamic forest](https://www.npmjs.org/package/dynamic-forest) data structure.
 
